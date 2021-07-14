@@ -49,7 +49,7 @@ Dependency
 
 ```
 dependencies {
-    implementation 'com.flatads.sdk:flatads:1.1.11'
+    implementation 'com.flatads.sdk:flatads:1.1.10'
 }
 
 //
@@ -353,8 +353,6 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 Layout element acquisition must be bound when success. Call "showAd" to display ads after layout development, or will get no response.
-
-Because video ads will play in Native, Ads lifecycle callback need be added in relevant Activity lifecycle, or the player may be in error.
 
 * Ad Events
 1. Ad load Listener
