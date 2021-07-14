@@ -707,11 +707,11 @@ rewardedAd.loadAd(token);
 ### What's More
 
 ####  Notice
-1、Open storage permission of app to download apk from ads when integration, or some phones will not work for downloading apk.
-2、When code obfuscation, add -keep class com.flatads.sdk.response.* {*;} , or no data return.
-3、Add element in native layout before calling "loadAd" method, or ads will not show properly.
-4、Interstitials need register callback listener and call "showAd" to display ads in "onAdLoaded", or ads will not show properly.
-5、Network secure config: Create a "xml" folder under "res" folder, then create file "network_security_config.xml"
+1. Open storage permission of app to download apk from ads when integration, or some phones will not work for downloading apk.
+2. When code obfuscation, add -keep class com.flatads.sdk.response.* {*;} , or no data return.
+3. Add element in native layout before calling "loadAd" method, or ads will not show properly.
+4. Interstitials need register callback listener and call "showAd" to display ads in "onAdLoaded", or ads will not show properly.
+5. Network secure config: Create a "xml" folder under "res" folder, then create file "network_security_config.xml"
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config xmlns:tools="http://schemas.android.com/tools"
