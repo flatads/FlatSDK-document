@@ -10,29 +10,49 @@ Please contact your account manager to get Flat Ads publisher account.
 ![Alt text](./flat_image/1620964293507.png)
 
 > Type: whether your traffic is from app or website；
+> 
 > Platform：Android or IOS；
+> 
 > Bundle：APP's bundle name；（If your Android APP is on google play, by clicking "Look up" button after you entered bundle name，Store URL and APP Category will be found automatically）
+> 
 > Store URL：Product link in Google play or apple store；
+> 
 > Domain：Site's domain；
+> 
 > Is app published：whether you app is on Google play or apple store；
+> 
 > Status：if status is inactive，Appid and token will be invalid；
+> 
 > COPPA：whether your app is directed at users under the age of 13 (COPPA)；
+> 
 > TOKEN和Appid：Used for integration.
+> 
 
 3. Create your placement by clicking save and continue button.
 ![Alt text](./flat_image/1620964462690.png)
 
 > App/Site：which app/site does this placement belong to. One app/site has more than one placement；
+> 
 > Name：Name of placement，like "APPNAME_TYPE_SIZE"；
+> 
 > Bid Floor：Floor bid of this placement. the ads lower than this price will not be showed；(Please start with 0.01$ for test)
+> 
 > Placement Type：we support Banner, Native, Interstitial and Rewarded Ad；
+> 
 > Size：Size of placement；
+> 
 > Allowed Ad Type：Ad type allowed on this placement；we support Display(HTML), Static, VAST Video and Playable；
+> 
 > Refresh Time：Banner will show another ads if no action occur on the current ads in refresh time.
+> 
 > Muting：Whether the video is muting or not；
+> 
 > Allow Skip：How long will an ads be allowed to skip in interstitials placement；
+> 
 > CTA Popup：Whether a CTA button popups during video ads；
+> 
 > Status：if status is inactive，placement will not request for ads；
+> 
 
 ### Integrate the Flat Ads SDK
 Now that you’ve set up your app and placement, it’s time to integrate the SDKs into your app.
