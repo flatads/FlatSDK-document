@@ -577,7 +577,7 @@ Pass relevant info of rewarded ads and load ads, then call"showAd" to display ad
 
 
 |  Field Name   | Type  |  example  |  description  |  note  |
-|  ----  | ----  | |||
+|  ----  | ----  |  ----  |  ----  |  ----  | 
 | customer_id  | string |1234567|Motivated clients id|Optional|
 | unique_id  | string |uihj89uijkbn7uy8|The only id incentives|Optional|
 |  reward_type   | Incentive type|add_coins|The type of incentive|Optional|
