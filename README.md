@@ -69,7 +69,7 @@ Dependency
 
 ```
 dependencies {
-    implementation 'com.flatads.sdk:flatads:1.1.10'
+    implementation 'com.flatads.sdk:flatads:1.4.5'
 }
 
 //
@@ -93,7 +93,15 @@ public class MainActivity extends AppCompatActivity {
         String appId = "xxxxxxxx"; //appid in publisher account
         String token = "xxxxxxxxxxxxxxxx"; //token in publisher account
 
-        FlatAdSDK.initialize(getApplication(), appId, token);
+        FlatAdSDK.initialize(getApplication(), appId, token, new InitListener(){
+                    @Override
+                    public void onSuccess() {
+                    }
+
+                    @Override
+                    public void onFailure(int code, String msg) {
+                    }
+                };
     }
 
 }
@@ -131,7 +139,15 @@ public class MainActivity extends AppCompatActivity {
         String appId = "xxxxxxxx"; //appid in publisher account
         String token = "xxxxxxxxxxxxxxxx"; //token in publisher account
 
-        FlatAdSDK.initialize(getApplication(), appId, token);
+        FlatAdSDK.initialize(getApplication(), appId, token, new InitListener(){
+                    @Override
+                    public void onSuccess() {
+                    }
+
+                    @Override
+                    public void onFailure(int code, String msg) {
+                    }
+                };
 
         BannerAdView bannerAdView = findViewById(R.id.banner);
         bannerAdView.setAdUnitId("xxxxxxx");
@@ -299,7 +315,15 @@ public class MainActivity extends AppCompatActivity {
         String appId = "xxxxxxxx"; //appid in publisher account
         String token = "xxxxxxxxxxxxxxxx"; //token in publisher account
 
-        FlatAdSDK.initialize(getApplication(), appId, token);
+       FlatAdSDK.initialize(getApplication(), appId, token, new InitListener(){
+                   @Override
+                   public void onSuccess() {
+                   }
+
+                   @Override
+                   public void onFailure(int code, String msg) {
+                   }
+               };
 
         nativeAdView = findViewById(R.id.container);
         String adUnitId = "xxxxxxxxx";
@@ -426,7 +450,15 @@ public class MainActivity extends AppCompatActivity {
         String appId = "xxxxxxxx"; // appid in publisher account
         String token = "xxxxxxxxxxxxxxxx"; //token in publisher account
 
-        FlatAdSDK.initialize(getApplication(), appId, token);
+        FlatAdSDK.initialize(getApplication(), appId, token, new InitListener(){
+                    @Override
+                    public void onSuccess() {
+                    }
+
+                    @Override
+                    public void onFailure(int code, String msg) {
+                    }
+                };
 
         adLoader = new InterstitialAd(this);
 
